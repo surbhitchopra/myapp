@@ -1,0 +1,70 @@
+.home-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-start; /* important: top content after navbar */
+    background-image: url('https://www.shutterstock.com/image-photo/abstract-blur-car-garage-automobile-600nw-2304383521.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    justify-content: space-between; /* logos at extreme ends */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 20px; /* small side padding */
+    box-sizing: border-box;
+}
+
+.left-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-logos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* space between right logos */
+}
+
+.logo-image {
+    width: 200px; 
+    height: auto;
+}
+
+/* Home Content */
+.home-content {
+    text-align: center;
+    width: 100%; 
+    font-size: 2rem; /* Bigger size */
+}
+
+.bottom-image {
+    margin-top: 30px; 
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1; /* End in original position */
+        transform: translateY(0);
+    }
+}
+
+.animated-heading {
+    display: inline-block; /* Ensure it behaves like a block for animation */
+    animation: fadeIn 1s ease-in-out; /* Apply the fadeIn animation */
+    animation-delay: 0.5s; /* Optional: delay the animation */
+}

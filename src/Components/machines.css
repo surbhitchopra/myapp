@@ -1,0 +1,44 @@
+/* Styles for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the machine */
+.machine-container {
+    display: flex;                          /* Flex layout for side-by-side content */
+    align-items: center;                   /* Center items vertically */
+    justify-content: space-between;        /* Space between image and content */
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    flex-wrap: wrap;                       /* Wrap on smaller screens */
+    gap: 20px;
+}
+
+/* Styles for the machine image */
+.machine-image {
+    width: 45%;                            /* Adjust width for side-by-side */
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-color: blue;
+}
+
+/* Hover effect for the machine image */
+.machine-image:hover {
+    transform: scale(1.05);
+}
+
+/* Optional: Content beside the image */
+.machine-details {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts space between logo and links */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Change background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .navbar-logo {
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333; /* Change link color as needed */
+    font-weight: bold; /* Optional styling */
+  }
+  
+  .navbar-links a:hover {
+    color: #007BFF; /* Change color on hover */
+  }

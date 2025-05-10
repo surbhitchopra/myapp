@@ -1,38 +1,72 @@
 .App {
-  text-align: center;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background: white;
+  padding: 10px 20px; /* Added side padding */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand img {
+  height: 50px; /* Set logo height */
+  width: auto; /* Maintain logo aspect ratio */
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; /* Remove extra margin */
+}
+
+.navbar-links li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.navbar-links a:hover {
+  background: linear-gradient(to right, yellow, grey);
+  color: black;
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid black;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: #ffcc00;
+  visibility: hidden;
+}
+
+.navbar-links a:hover::after {
+  visibility: visible;
+}
+
+.main-content {
+  padding: 20px;
 }
