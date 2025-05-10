@@ -1,0 +1,42 @@
+/* Contact.css */
+
+.contact-page {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #FFD700, #808080); /* Yellow to grey */
+    padding: 50px 20px;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-page h1, 
+  .contact-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .contact-info,
+  .motto,
+  .address {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .contact-info p,
+  .motto p,
+  .address p {
+    margin: 5px 0;
+  }
+  

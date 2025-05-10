@@ -1,0 +1,61 @@
+.about-container {
+    padding: 20px;
+    background-color:lightblue;
+  }
+  
+  .about-heading {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .about-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position the line just under the heading */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Line thickness */
+    background: linear-gradient(to right, yellow, grey);
+  }
+  
+  .quotes {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .advantage-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;
+   background: linear-gradient(to right, yellow, grey);
+    padding: 10px;
+  }
+  
+  .advantage-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+  
+  .advantage-list li {
+    margin-bottom: 10px;
+  }
+  
+  .specialties {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  
